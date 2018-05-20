@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import * as $ from 'jquery';
+import {AngularFirestore} from 'angularfire2/firestore';
+import {Observable} from 'rxjs';
 
 @Component({
     selector: 'app-root',
@@ -7,5 +8,5 @@ import * as $ from 'jquery';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'mediApp';
+
 }
