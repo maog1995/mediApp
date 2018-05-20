@@ -2,11 +2,13 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {LauncherComponent} from './launcher/launcher.component';
 import {TvComponent} from './launcher/tv/tv.component';
+import {ViewComponent} from './launcher/tv/view/view.component';
 import {RadioComponent} from './launcher/radio/radio.component';
 
 const routes: Routes = [
     {path: '', component: LauncherComponent},
     {path: 'tv', component: TvComponent},
+    {path: 'tv/view', component: ViewComponent},
     {path: 'radio', component: RadioComponent}
 ];
 
@@ -17,4 +19,4 @@ const routes: Routes = [
 export class AppRoutingModule {
 }
 
-export const routingComponents = [LauncherComponent, TvComponent, RadioComponent];
+export const routingComponents = [LauncherComponent, TvComponent, ViewComponent, RadioComponent];

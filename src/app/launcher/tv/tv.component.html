@@ -4,38 +4,9 @@
             <img src="{{item.imageLink}}" alt="{{item.name}}" style="width: 100%">
             <div class="card-body">
                 <h5 class="card-title">{{item.name}}</h5>
-                <button (click)="cambiarVideo(item.m3u8Link)" class="btn btn-outline-success btn-block"
-                        data-toggle="modal" data-target="#exampleModal"
+                <button (click)="setSelected(item)" class="btn btn-outline-success btn-block"
+                        data-toggle="modal"
                         [disabled]="!item.enabled">Ver
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document" style="min-width: 700px">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">View channel</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                        onclick="videojs('my_video_1_html5_api').pause();">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" style="margin: auto">
-                <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640"
-                       height="268"
-                       data-setup='{}'>
-                    <source id="source"
-                            src="http://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8"
-                            type="application/x-mpegURL">
-                </video>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal"
-                        onclick="videojs('my_video_1_html5_api').pause();">Close
                 </button>
             </div>
         </div>

@@ -17,14 +17,8 @@ export class TvComponent implements OnInit {
     ngOnInit() {
     }
 
-    function;
-
-    cambiarVideo(url) {
-        videojs('my_video_1_html5_api').src({
-            src: url,
-            type: 'application/x-mpegURL',
-            withCredentials: true
-        });
-        videojs('my_video_1_html5_api').play();
+    setSelected(channel) {
+        window.sessionStorage.setItem('m3u8Link', channel.m3u8Link);
+        window.location.href = 'tv/view';
     }
 }
