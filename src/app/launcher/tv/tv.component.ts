@@ -19,6 +19,6 @@ export class TvComponent implements OnInit {
 
     setSelected(channel) {
         window.sessionStorage.setItem('m3u8Link', channel.m3u8Link);
-        window.location.href = 'tv/view';
+        window.location.href = 'view';
     }
 }

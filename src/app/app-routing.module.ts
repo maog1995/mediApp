@@ -8,7 +8,7 @@ import {RadioComponent} from './launcher/radio/radio.component';
 const routes: Routes = [
     {path: '', component: LauncherComponent},
     {path: 'tv', component: TvComponent},
-    {path: 'tv/view', component: ViewComponent},
+    {path: 'view', component: ViewComponent},
     {path: 'radio', component: RadioComponent}
 ];
 
